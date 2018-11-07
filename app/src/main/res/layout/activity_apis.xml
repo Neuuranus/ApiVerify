@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".com.uranus.apiverify.activity.ActivityApis">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/activity"
-        android:id="@+id/activity"
+        android:text="@string/activity_life_cycle"
+        android:id="@+id/activity_life_cycle"
         android:onClick="onClick"/>
 
 </android.support.constraint.ConstraintLayout>
