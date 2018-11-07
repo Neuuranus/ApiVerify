@@ -17,10 +17,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activity.ActivityApis"
+            android:theme="@style/AppTheme" />
+        <activity
             android:name=".activity.LifeCycleA"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activity.ActivityApis"
+            android:name=".activity.LifeCycleB"
             android:theme="@style/AppTheme" />
     </application>
 

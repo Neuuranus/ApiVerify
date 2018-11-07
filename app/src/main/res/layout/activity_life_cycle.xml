@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".activity.LifeCycleA">
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/StartLifeB"
+        android:id="@+id/start_life_b"
+        android:onClick="onClick"/>
+
 </android.support.constraint.ConstraintLayout>
