@@ -25,6 +25,8 @@
         <activity
             android:name=".activity.LifeCycleB"
             android:theme="@style/AppTheme" />
+        <activity android:name=".libs.GsonApi"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

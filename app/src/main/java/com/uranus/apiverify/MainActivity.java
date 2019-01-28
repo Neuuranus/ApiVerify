@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.uranus.apiverify.activity.ActivityApis;
+import com.uranus.apiverify.libs.GsonApi;
 
 public class MainActivity extends Activity {
 
@@ -19,6 +20,8 @@ public class MainActivity extends Activity {
         switch (view.getId()) {
             case R.id.activity:
                 startActivity(new Intent(this, ActivityApis.class));
+            case R.id.gsonapi:
+                startActivity(new Intent(this, GsonApi.class));
         }
     }
 }

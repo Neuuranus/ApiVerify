@@ -3,4 +3,5 @@
     <string name="activity">Activity</string>
     <string name="activity_life_cycle">Activity Life</string>
     <string name="StartLifeB">StartLifeB</string>
+    <string name="GsonApi">GsonApi</string>
 </resources>
