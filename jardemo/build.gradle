@@ -1,8 +1,17 @@
-apply plugin: 'java-library'
+apply plugin: 'java'
 
 dependencies {
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation files('libs/gson.jar')
 }
 
-sourceCompatibility = "7"
-targetCompatibility = "7"
+task makrJar (type: Jar){
+    archiveName="jardemo-release.jar"
+    from(project.zipTree('build/libs/jardemo.jar'))
+    from(project.zipTree('libs/gson.jar'))
+    destinationDir=file('build/libs')
+}
+
+makrJar.dependsOn(build)
+
+sourceCompatibility = "8"
+targetCompatibility = "8"

@@ -24,6 +24,15 @@ android {
 
 }
 
+task makeAar(type: Jar){
+    archiveName="aardemo.jar"
+    from(project.zipTree('build/intermediates/packaged-classes/release/classes.jar'))
+    from(project.zipTree('build/intermediates/packaged-classes/release/libs/okhttp-3.10.0.jar'))
+    destinationDir=file('build/libs')
+}
+
+makeAar.dependsOn(build)
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
